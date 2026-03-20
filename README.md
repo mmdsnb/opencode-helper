@@ -1,46 +1,42 @@
 # OpenCode Config Bootstrap
 
-让 opencode 自动配置自己。
+Let opencode configure itself automatically.
 
-## 使用方法
+**[中文文档](README.zh-CN.md)**
 
-### 方式一：Clone 项目（推荐，无需爬取）
+## Usage
+
+### Option 1: Clone the project (Recommended, no crawling needed)
 
 ```bash
-git clone https://github.com/你的用户名/opencode-helper.git
-cd opencode-helper
+git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper && cp -r ./docs ~/.config/opencode/docs && cp ./helper.md ~/.config/opencode/agent/helper.md
 ```
 
-然后在 opencode 中输入：
+opencode will use the pre-crawled docs directly, no crawling needed.
+
+### Option 2: Only get bootstrap.md (crawling required)
+
+In opencode, enter:
 
 ```
-请读取当前目录下的 bootstrap.md 并执行
+Read this file and execute the instructions:
+https://raw.githubusercontent.com/mmdsnb/opencode-helper/main/bootstrap.md
 ```
 
-opencode 会直接使用项目中已有的文档，无需爬取。
+opencode will automatically crawl the docs (~2 min), then create the helper agent.
 
-### 方式二：只获取 bootstrap.md（需要爬取）
+## After Setup
 
-在 opencode 中输入：
+Use `@helper` to configure opencode:
 
-```
-请读取这个文件并执行其中的指令：
-https://raw.githubusercontent.com/你的用户名/opencode-helper/main/bootstrap.md
-```
+- "What built-in agents does opencode have?"
+- "Check my config for issues"
+- "Help me create a code review agent"
+- "Change build agent's model to haiku"
 
-opencode 会自动爬取文档（约 2 分钟），然后创建 helper agent。
+## Files
 
-## 完成后
-
-使用 `@helper` 来配置 opencode：
-
-- "opencode 有哪些内置 agent？"
-- "检查我的配置有什么问题"
-- "帮我创建一个代码审查 agent"
-- "把 build agent 的模型换成 haiku"
-
-## 文件说明
-
-- `bootstrap.md` - 引导文件
-- `docs/` - 预爬取的 opencode 文档（33 个页面）
-- `README.md` - 本文件
+- `bootstrap.md` - Bootstrap instructions
+- `docs/` - Pre-crawled opencode docs (33 pages)
+- `README.md` - This file
+- `README.zh-CN.md` - Chinese documentation
