@@ -9,10 +9,14 @@ Let opencode configure itself automatically.
 ### Option 1: Clone the project (Recommended, no crawling needed)
 
 ```bash
-git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper && cp -r ./docs ~/.config/opencode/docs && cp ./helper.md ~/.config/opencode/agent/helper.md
+git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper
 ```
 
-opencode will use the pre-crawled docs directly, no crawling needed.
+Then in opencode:
+
+```
+Execute the commands in bootstrap.md
+```
 
 ### Option 2: Only get bootstrap.md (crawling required)
 

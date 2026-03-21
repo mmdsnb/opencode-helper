@@ -9,10 +9,14 @@
 ### 方式一：Clone 项目（推荐，无需爬取）
 
 ```bash
-git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper && cp -r ./docs ~/.config/opencode/docs && cp ./helper.md ~/.config/opencode/agent/helper.md
+git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper
 ```
 
-opencode 会直接使用项目中已有的文档，无需爬取。
+然后在 opencode 中输入：
+
+```
+执行 bootstrap.md 中的命令
+```
 
 ### 方式二：只获取 bootstrap.md（需要爬取）
 
