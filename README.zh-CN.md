@@ -9,13 +9,7 @@
 ### 方式一：Clone 项目（推荐，无需爬取）
 
 ```bash
-git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper
-```
-
-然后在 opencode 中输入：
-
-```
-执行 bootstrap.md 中的命令
+git clone https://github.com/mmdsnb/opencode-helper.git && cd opencode-helper && opencode -p "执行 bootstrap.md 中的命令"
 ```
 
 ### 方式二：只获取 bootstrap.md（需要爬取）
